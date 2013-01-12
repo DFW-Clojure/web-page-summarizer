@@ -5,7 +5,8 @@
             [wps.controller :as c]))
 
 (defroutes app-routes
-  (GET "/" [] c/home-page)
+  (GET "/" [] (c/home-page))
+  (POST "/" [url] (c/summary-page url))
   (route/not-found "Not Found"))
 
 (def app
