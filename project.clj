@@ -2,7 +2,8 @@
   :description "Compojure app that summarizes websites."
   :url "https://github.com/DFW-Clojure/web-page-summarizer"
   :dependencies [[org.clojure/clojure "1.4.0"]
-                 [compojure "1.1.4"]]
+                 [compojure "1.1.4"]
+                 [enlive "1.0.1"]]
   :plugins [[lein-ring "0.8.0"]]
   :ring {:handler wps.handler/app}
   :profiles
